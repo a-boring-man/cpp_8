@@ -6,7 +6,7 @@
 /*   By: jrinna <jrinna@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 10:35:31 by jrinna            #+#    #+#             */
-/*   Updated: 2022/10/20 14:22:38 by jrinna           ###   ########lyon.fr   */
+/*   Updated: 2022/10/20 14:55:15 by jrinna           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,6 +91,15 @@ void			Span::addNumber( int i ) {
 	cout << "adding number : " << i << endl;
 	_tab[_current_stored_number] = i;
 	_current_stored_number++;
+}
+
+void			Span::addLotOfNumber( std::vector<int>::iterator it1, std::vector<int>::iterator it2 ) {
+
+	while (it1 != it2)
+	{
+		addNumber(*it1);
+		it1++;
+	}
 }
 
 int				Span::shortestSpan() {

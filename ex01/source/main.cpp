@@ -6,7 +6,7 @@
 /*   By: jrinna <jrinna@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:06:36 by jrinna            #+#    #+#             */
-/*   Updated: 2022/10/20 14:26:27 by jrinna           ###   ########lyon.fr   */
+/*   Updated: 2022/10/20 14:59:14 by jrinna           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,16 @@ int main( void ) {
 	S.addNumber(12);
 	S.addNumber(95);
 	S.addNumber(58);
+	cout << S << endl;
+	cout << "min span is : " << S.shortestSpan() << endl;
+	cout << S << endl;
+	cout << "max span is : " << S.longestSpan() << endl;
+	std::vector<int>	V;
+	V.push_back(4);
+	V.push_back(241);
+	V.push_back(45124);
+	V.push_back(52);
+	S.addLotOfNumber(V.begin(), V.end());
 	cout << S << endl;
 	cout << "min span is : " << S.shortestSpan() << endl;
 	cout << S << endl;
