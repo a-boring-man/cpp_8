@@ -6,7 +6,7 @@
 #    By: jrinna <jrinna@student.42lyon.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/19 10:49:33 by jrinna            #+#    #+#              #
-#    Updated: 2022/10/19 11:06:22 by jrinna           ###   ########lyon.fr    #
+#    Updated: 2023/07/19 12:39:29 by jrinna           ###   ########lyon.fr    #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRC := ${addprefix ${DIR_SRC}/,${LST_SRC}}
 OBJ := ${addprefix ${DIR_OBJ}/,${LST_OBJ}}
 DEP := ${addprefix ${DIR_OBJ}/,${LST_DEP}}
 
-CC := c++ -std=c++98
+CC := c++ #-std=c++98
 CFLAGS := -Wall -Wextra -Werror -MD #-fsanitize=address -g3
 NAME := ez
 

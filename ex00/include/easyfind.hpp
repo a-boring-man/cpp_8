@@ -6,7 +6,7 @@
 /*   By: jrinna <jrinna@student.42lyon.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/19 11:06:33 by jrinna            #+#    #+#             */
-/*   Updated: 2022/10/21 09:33:09 by jrinna           ###   ########lyon.fr   */
+/*   Updated: 2023/07/19 12:39:15 by jrinna           ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ using std::string;
 
 template < typename T >
 int	easyfind( const T& cont, const int i ) {
-	typename T::const_iterator	it = cont.cbegin();
-	typename T::const_iterator	ite = cont.cend();
+	typename T::const_iterator	it = cont.begin();
+	typename T::const_iterator	ite = cont.end();
 	typename T::const_iterator itt = std::find(it, ite, i);
 	size_t j = 0;
 	while (it != itt)
